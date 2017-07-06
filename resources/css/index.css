@@ -5,8 +5,22 @@ body {
     margin: 0;
     font-size: 18px;
     line-height: 1.4;
+    font-family: helvetica, sans-serif;
 }
 
+.row {
+    width: 100%;
+    clear: both;
+}
+
+.col-two {
+    width: 35%;
+    float: left;
+}
+
+/*top header and navigation*/
+
+/*full container of banner and navigation*/
 .header-container {
     background-image: url("../images/banner-background.png");
     background-repeat: no-repeat;
@@ -49,6 +63,7 @@ body {
     font-family: Helvetica;
 }
 
+/*banner of company moto*/
 .banner-container {
     display: flex;
     justify-content: flex-end;
@@ -64,4 +79,55 @@ body {
     padding-left: 5rem;
     margin-top: 10rem;
     margin-right: -2rem;
+}
+
+
+/*main content*/
+
+.main-container {
+}
+
+.overview {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: 8rem;
+    border: 2px border purple;
+    text-align: center;
+}
+
+.ruler-icon  {
+    width: 5rem;
+    height: 8rem;
+    padding: 10px;
+    margin-right: 6rem;
+}
+
+.truck-icon {
+    width: 5rem;
+    padding: 10px;
+    height: 8rem;
+}
+
+.paper-icon {
+    width: 3.5rem;
+    height: 8rem;
+    padding: 15px;
+    margin-right: 6rem;
+}
+
+.overview img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*information of appointments and philosophy*/
+
+.info-container {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid pink;
 }
