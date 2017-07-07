@@ -34,8 +34,12 @@ body {
 }
 
 .flex-container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
+}
+
+.menu-screen-phone {
+    display: none;
 }
 
 .header {
@@ -45,6 +49,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 3.5rem;
+    margin-top: 1rem;
 }
 
 .menu-selection {
@@ -89,13 +94,10 @@ body {
 /*main content*/
 
 .overview {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding-bottom: 3rem;
-    height: 8rem;
-    text-align: center;
 }
 
 .overview img {
@@ -120,8 +122,8 @@ body {
 }
 
 
-/*information of appointments and philosophy*/
 
+/*information of appointments and philosophy*/
 .info-container {
     max-width: 960px;
     margin: 0 auto;
@@ -129,7 +131,6 @@ body {
     justify-content: center;
     padding-bottom: 5rem;
 }
-
 
 .philosophy h3, .appointments h3 {
     background-color: cadetblue;
@@ -145,10 +146,8 @@ body {
 
 
 /*footer*/
-
-
 .footer {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 .footer-logo {
@@ -160,4 +159,112 @@ body {
 .footer-logo img {
     height: 1.5rem;
     padding: 4rem 1rem 4rem 4rem;
+}
+
+
+/*different media screen sizes*/
+
+@media only screen and (max-width: 1024px) {
+    
+    .header-container {
+        height: 22rem;
+    }
+
+    .header {
+        margin-top: 0;
+    }
+
+    .flex-container {
+        width: 100%;
+    }
+
+    .banner {
+        font-size: 1.33rem;
+        line-height: 1.2;
+        background-color: white;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        margin-top: 5rem;
+        margin-right: 2rem;
+}
+
+@media only screen and (max-width: 470px) {
+    .header {
+        margin-top: 0;
+    }
+    .menu {
+        display: none;
+    }
+
+    .menu-screen-phone {
+        display: inline-flex;
+        padding-right: 1rem;
+    }
+    
+    .header-container {
+        background-position: 20%;
+        height: 17rem;
+    }
+
+    .flex-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    /*overview container*/
+    .overview {
+        width: 100%;
+        margin-top: 3.77rem;
+        margin-bottom: 3.77rem;
+        font-size: .77rem;
+        display: block;
+        text-align: center;
+    }
+
+    .ruler-icon,
+    .truck-icon,
+    .paper-icon {
+        margin-top: 1.54rem;
+        height: 6rem;
+        text-align: center;
+    }
+
+
+    /*info container*/
+    .info-container {
+        display: block;
+    }
+
+    .philosophy, .appointments, .col-two{
+        display: block;
+        width: 100%;
+    }
+
+    .space-between {
+        display: none;
+    }
+
+    .philosophy h3, .appointments h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .philosophy p, .appointments p {
+        margin: 1rem;
+        margin-bottom: 4rem;
+        font-size: 0.77rem;
+    }
+
+    /*footer*/
+    .footer-logo {
+        justify-content: center;
+    }
+    .footer span {
+        display: none;
+    }
 }
