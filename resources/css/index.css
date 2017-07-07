@@ -88,45 +88,37 @@ body {
 
 /*main content*/
 
-.main-container {
-    
-}
-
 .overview {
     width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
     padding-bottom: 3rem;
     height: 8rem;
     text-align: center;
-}
-
-.ruler-icon  {
-    width: 5rem;
-    height: 8rem;
-    padding: 10px;
-    margin-right: 6rem;
-}
-
-.truck-icon {
-    width: 5rem;
-    padding: 10px;
-    height: 8rem;
-}
-
-.paper-icon {
-    width: 3.5rem;
-    height: 8rem;
-    padding: 15px;
-    margin-right: 6rem;
 }
 
 .overview img {
     max-width: 100%;
     max-height: 100%;
 }
+
+.ruler-icon,
+.truck-icon,
+.paper-icon  {
+    width: 5rem;
+    height: 8rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.paper-icon {
+    width: 3.5rem;
+}
+
 
 /*information of appointments and philosophy*/
 
@@ -135,7 +127,9 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-bottom: 5rem;
 }
+
 
 .philosophy h3, .appointments h3 {
     background-color: cadetblue;
@@ -144,4 +138,26 @@ body {
     color: white;
     font-size: 1rem;
     font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*footer*/
+
+
+.footer {
+    width: 960px;
+    margin: 0 auto;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    background-color: azure;
+}
+
+.footer-logo img {
+    height: 1.5rem;
+    padding: 4rem 1rem 4rem 4rem;
 }
